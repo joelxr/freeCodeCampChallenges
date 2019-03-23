@@ -21,7 +21,7 @@ TBD.
 
 ## Time report
 
-Here goes time that I spent to each challenge, thanks [WakaTime](wakatime.com)!
+Here goes time that I spent to each challenge, thanks [WakaTime](https://wakatime.com)!
 
 | Challenge    |     Time      |
 | ------------ | :-----------: |
