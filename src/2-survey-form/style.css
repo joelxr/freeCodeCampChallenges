@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Suez+One");
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900");
+
+.main {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: rgb(66, 82, 110);
+  background: rgb(7, 71, 166);
+}
+
+.container {
+  width: 100%;
+}
+
+.title {
+  margin: 3rem 4rem;
+  font-family: "Rubik", sans-serif;
+  font-size: 5.5rem;
+  font-weight: 700;
+  line-height: 5.5rem;
+  color: #f2f2f2;
+  text-align: center;
+}
+
+.content {
+  display: block;
+  width: 60%;
+  padding: 1rem 2rem;
+  margin: 2rem auto;
+  background-color: rgb(244, 245, 247);
+  border-radius: 20px;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+}
+
+.formWrapper {
+  width: 100%;
+}
+
+.form {
+  width: 367px;
+  margin: 0 auto;
+}
+
+.field {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+.field label {
+  margin: 0 1rem;
+  text-align: right;
+}
+
+.field label .optional {
+  font-size: 0.8rem;
+  color: #767676;
+}
+
+.field input,
+.field textarea,
+.field select {
+  box-sizing: inherit;
+  max-width: 12rem;
+  min-height: 1.5rem;
+  padding: 0.4rem 0.6rem;
+  font-size: 1.1rem;
+  background-color: #f2f2f2;
+  border: 0.1rem solid #767676;
+  border-radius: 0.4rem;
+  box-shadow: none;
+}
+
+.field input:focus,
+.field textarea:focus {
+  border: 0.1rem solid #7676d8;
+}
+
+.field ul {
+  list-style: none;
+}
+
+.field ul li label {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.field ul li label input[type="radio"],
+.field ul li label input[type="checkbox"] {
+  width: auto;
+  margin-right: 1rem;
+}
+
+.btn {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  margin: 2rem 0;
+  font-size: 1.4rem;
+  color: #f2f2f2;
+  background-color: #21ce98;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.btn:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}

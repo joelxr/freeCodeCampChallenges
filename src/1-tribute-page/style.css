@@ -1,0 +1,370 @@
+.main {
+  padding: 0;
+  margin: 0;
+  font-family: "Saira Extra Condensed", sans-serif;
+  color: #d2ec9f;
+  background-color: #7a9e36;
+}
+
+.container {
+  width: 100%;
+}
+
+.heading {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 90px;
+  padding: 1rem;
+  margin: 0;
+  margin-bottom: 24px;
+  background-color: #577816;
+}
+
+.title {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  display: block;
+  padding: 0;
+  margin: 0 auto;
+  font-weight: 900;
+  text-shadow: #355101 2px 2px 12px;
+}
+
+.subtitle {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  padding: 0;
+  margin: 0;
+  font-weight: 900;
+  color: #355101;
+}
+
+.image-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.image-container .image {
+  display: block;
+  max-width: 40%;
+  height: auto;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.image-container .image:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.image-container .image-caption {
+  max-width: 35%;
+  height: auto;
+  padding: 12px 20px;
+  margin: 24px 0;
+  font-size: 1.4rem;
+  background-color: #577816;
+  border: 8px solid #355101;
+  border-radius: 25px;
+}
+
+.timeline {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+}
+
+.timeline-heading {
+  display: block;
+  width: auto;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.timeline-heading h3 {
+  padding: 0;
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 900;
+  text-shadow: #355101 2px 2px 12px;
+}
+
+.timeline-heading a {
+  font-size: 1.4rem;
+  line-height: 1rem;
+  color: #d2ec9f;
+  text-decoration: none;
+  border-bottom: 2px dashed #d2ec9f;
+}
+
+.timeline-heading a:hover {
+  color: #d2ec55;
+  border-bottom: 2px dashed #d2ec55;
+}
+
+.timeline-content {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: baseline;
+  justify-content: center;
+  font-size: 1.4rem;
+  list-style-type: none;
+}
+
+.timeline-content li {
+  display: flex;
+  flex-flow: column nowrap;
+  max-width: 15%;
+  min-height: 160px;
+  padding: 0.5rem 1rem;
+  margin: 0.8rem 1.4rem;
+  font-size: 1.2rem;
+  hyphens: auto;
+  word-break: break-word;
+  background-color: #577816;
+  border: 8px solid #355101;
+  border-radius: 25px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.timeline-content li:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.timeline-content li .year {
+  display: block;
+  align-self: center;
+  padding: 0;
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: 900;
+  line-height: 2.1rem;
+  text-shadow: #355101 2px 2px 12px;
+}
+
+@media (max-width: 575px) {
+  .title {
+    font-size: 2.4rem;
+  }
+
+  .subtitle {
+    margin-top: 50px;
+    font-size: 1.1rem;
+    line-height: 1rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .title {
+    font-size: 2.6rem;
+  }
+
+  .subtitle {
+    margin-top: 55px;
+    font-size: 1.4rem;
+    line-height: 1.1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 3rem;
+  }
+
+  .subtitle {
+    margin-top: 65px;
+    font-size: 1.6rem;
+    line-height: 1.2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .title {
+    font-size: 3.2rem;
+  }
+
+  .subtitle {
+    margin-top: 70px;
+    font-size: 2rem;
+    line-height: 1.6rem;
+  }
+}
+
+#background-bubbles {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* KEYFRAMES */
+
+@-webkit-keyframes animateBubble {
+  0% {
+    margin-top: 1000px;
+  }
+  100% {
+    margin-top: -100%;
+  }
+}
+
+@-moz-keyframes animateBubble {
+  0% {
+    margin-top: 1000px;
+  }
+  100% {
+    margin-top: -100%;
+  }
+}
+
+@keyframes animateBubble {
+  0% {
+    margin-top: 1000px;
+  }
+  100% {
+    margin-top: -100%;
+  }
+}
+
+@-webkit-keyframes sideWays {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 50px;
+  }
+}
+
+@-moz-keyframes sideWays {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 50px;
+  }
+}
+
+@keyframes sideWays {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 50px;
+  }
+}
+
+/* ANIMATIONS */
+
+.x1 {
+  top: 5%;
+  left: -5%;
+  transform: scale(0.6);
+  animation: animateBubble 25s linear infinite,
+    sideWays 2s ease-in-out infinite alternate;
+}
+
+.x2 {
+  top: 80%;
+  left: 5%;
+  transform: scale(0.4);
+  animation: animateBubble 20s linear infinite,
+    sideWays 4s ease-in-out infinite alternate;
+}
+
+.x3 {
+  top: 40%;
+  left: 10%;
+  transform: scale(0.7);
+  animation: animateBubble 28s linear infinite,
+    sideWays 2s ease-in-out infinite alternate;
+}
+
+.x4 {
+  top: 0;
+  left: 20%;
+  transform: scale(0.3);
+  animation: animateBubble 22s linear infinite,
+    sideWays 3s ease-in-out infinite alternate;
+}
+
+.x5 {
+  top: 50%;
+  left: 30%;
+  transform: scale(0.5);
+  animation: animateBubble 29s linear infinite,
+    sideWays 4s ease-in-out infinite alternate;
+}
+
+.x6 {
+  top: 0;
+  left: 50%;
+  transform: scale(0.8);
+  animation: animateBubble 21s linear infinite,
+    sideWays 2s ease-in-out infinite alternate;
+}
+
+.x7 {
+  top: 70%;
+  left: 65%;
+  transform: scale(0.4);
+  animation: animateBubble 20s linear infinite,
+    sideWays 2s ease-in-out infinite alternate;
+}
+
+.x8 {
+  top: 10%;
+  left: 80%;
+  transform: scale(0.3);
+  animation: animateBubble 22s linear infinite,
+    sideWays 3s ease-in-out infinite alternate;
+}
+
+.x9 {
+  top: 50%;
+  left: 90%;
+  transform: scale(0.6);
+  animation: animateBubble 29s linear infinite,
+    sideWays 4s ease-in-out infinite alternate;
+}
+
+.x10 {
+  top: 80%;
+  left: 80%;
+  transform: scale(0.3);
+  animation: animateBubble 26s linear infinite,
+    sideWays 2s ease-in-out infinite alternate;
+}
+
+/* OBJECTS */
+
+.bubble {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2),
+    inset 0 10px 30px 5px rgba(255, 255, 255, 1);
+}
+
+.bubble::after {
+  position: absolute;
+  left: 10px;
+  width: 180px;
+  height: 180px;
+  content: "";
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  border-radius: 50%;
+  box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+}
